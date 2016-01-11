@@ -1,0 +1,27 @@
+<!--{subtemplate common/header_ajax}-->
+<div class="f_c">
+ <h3 class="flb"> <em>种子详情</em> <span> <a href="javascript:;" class="flbc" onClick="hideWindow('torrentinfo')" title="关闭">关闭</a> </span> </h3>
+<div class="c">
+ 
+  <h4 class="torrentinfo_header">日期：$a_date</h4>
+  <!--{if $info["name"]}-->
+  <h4 class="torrentinfo_header">目录：$infoname</h4>
+  <!--{/if}-->
+  <h4 class="torrentinfo_header">大小：$allsize</h4>
+  <div style="max-height:300px; overflow-y:auto;">
+    <table cellspacing="0" cellpadding="5"  class="relateduser">
+      <thead>
+        <tr>
+          <th>文件名</th>
+          <th>大小</th>
+        </tr>
+      </thead>
+      <tbody>
+      $a_file
+      </tbody>
+      
+    </table>
+  </div>
+</div>
+</div>
+<!--{subtemplate common/footer_ajax}-->

@@ -1,0 +1,28 @@
+<div>
+共有记录 $total 条<br/>
+<table width="800" border="0" color="" cellspacing="1" cellpadding="0" class="dt mtm">
+<caption><h2 class="mbm xs2">下载历史</h2></caption>
+<tbody>
+  <tr style="background-color:#E8F0F7;">
+    <td>资源名称</td>
+    
+    <td>最近活动</td>
+    <td>上传/真实上传</td>
+    <td>下载/真实下载</td>
+	<td>创建时间</td>
+  </tr>
+<!--{loop $historys $history}-->
+  <tr style="height:26px;background-color:$history[color] ;">
+    <td><a href="forum.php?mod=viewthread&tid=$history[tid]" target="_blank">$history['subject']</a></td>
+    
+    <td>$history[date]</td>
+    <td>$history[uploaded]/$history[realup]</td>
+    <td>$history[downloaded]/$history[realdown]</td>
+	<td>$history[makedate]</td>
+  </tr>
+<!--{/loop}-->
+</tbody>
+</table>
+</div>
+<br/>
+$turnpage
